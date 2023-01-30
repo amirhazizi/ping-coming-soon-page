@@ -19,19 +19,23 @@
   </head>
   <body class="min-h-screen grid items-center">
     <main class="container mx-auto text-center py-20 md:py-0">
-      <img class="mx-auto h-4 mb-10" src="./images/logo.svg" alt="" />
+      <img
+        class="mx-auto h-4 mb-10 md:mb-8 md:h-5"
+        src="./images/logo.svg"
+        alt=""
+      />
       <div class="space-y-3 mb-8">
-        <h1 class="font-bold text-2xl">
+        <h1 class="font-bold text-2xl md:text-4xl">
           <span class="font-light text-cl_gray">We are launching </span>soon!
         </h1>
         <p class="font-semibold text-sm">Subscribe and get notified</p>
       </div>
       <form
-        class="flex flex-col px-2 max-w-xs mx-auto relative md:flex-row md:max-w-lg md:items-center"
+        class="flex flex-col px-2 max-w-xs mx-auto relative md:flex-row md:max-w-lg md:items-center md:space-x-5 md:px-0 md:mb-16"
         action=""
       >
         <input
-          class="border-cl_primary_blue rounded-full pb-2 pt-1 placeholder:pl-5 placeholder:text-sm placeholder:b-1 placeholder:opacity-75 placeholder:text-cl_paleBlue"
+          class="border-cl_paleBlue rounded-full pb-2 pt-1 placeholder:pl-8 placeholder:text-sm placeholder:b-1 placeholder:opacity-75 focus:outline-cl_primary_blue placeholder:text-cl_paleBlue md:w-2/3"
           type="text"
           name="emailAddress"
           id="email"
@@ -41,30 +45,32 @@
           Please provide a valid email address
         </p>
         <button
-          class="submit-btn bg-cl_primary_blue rounded-full py-3 text-white shadow-md shadow-cl_primary_blue font-semibold text-sm md:flex-1"
+          class="submit-btn bg-cl_primary_blue rounded-full py-3 text-white font-semibold text-sm md:m-0 md:w-1/3 hover:bg-blue-400"
           type="submit"
         >
           Notify Me
         </button>
       </form>
       <img
-        class="px-7 md:max-w-md md:px-0 mx-auto mb-28"
+        class="px-7 md:max-w-lg md:px-0 mx-auto mb-28 md:mb-12"
         src="./images/illustration-dashboard.png"
         alt=""
       />
-      <div class="space-x-3 text-cl_primary_blue text-base mb-8">
+      <div
+        class="space-x-3 text-cl_primary_blue text-base mb-8 md:space-x-1 md:mb-4"
+      >
         <a
-          class="border-2 p-1 px-2 rounded-full border-opacity-75 border-cl_paleBlue"
+          class="facebook rounded-full border-opacity-75 border-cl_paleBlue hover:text-white hover:bg-cl_primary_blue"
           href="#"
           ><i class="fa-brands fa-facebook-f"></i
         ></a>
         <a
-          class="border-2 p-1 px-2 rounded-full border-opacity-75 border-cl_paleBlue"
+          class="twitter rounded-full border-opacity-75 border-cl_paleBlue hover:text-white hover:bg-cl_primary_blue"
           href="#"
           ><i class="fa-brands fa-twitter"></i
         ></a>
         <a
-          class="border-2 p-1 px-2 rounded-full border-opacity-75 border-cl_paleBlue"
+          class="instagram rounded-full border-opacity-75 border-cl_paleBlue hover:text-white hover:bg-cl_primary_blue"
           href="#"
           ><i class="fa-brands fa-instagram"></i
         ></a>

@@ -614,15 +614,6 @@ video {
   border-radius: 9999px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-cl_primary_blue {
-  --tw-border-opacity: 1;
-  border-color: hsl(223 87% 63% / var(--tw-border-opacity));
-}
-
 .border-cl_paleBlue {
   --tw-border-opacity: 1;
   border-color: hsl(223 100% 88% / var(--tw-border-opacity));
@@ -640,10 +631,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .py-20 {
@@ -734,26 +721,10 @@ video {
   color: hsl(223 87% 63% / var(--tw-text-opacity));
 }
 
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-cl_primary_blue {
-  --tw-shadow-color: hsl(223, 87%, 63%);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-transparent {
-  --tw-shadow-color: transparent;
-  --tw-shadow: var(--tw-shadow-colored);
+a,
+button {
+  cursor: pointer;
+  transition: all 250ms linear;
 }
 
 input {
@@ -763,15 +734,28 @@ input {
 .submit-btn {
   margin-top: 0.5rem;
   margin-bottom: 4rem;
+  box-shadow: 0px 10px 25px hsla(223, 87%, 63%, 0.324);
 }
 
 .error-text {
   position: absolute;
-  transform: translate(0, 300%);
+  transform: translate(0, 350%);
   font-weight: 600;
-  left: 20%;
-  font-size: 0.7rem;
+  left: 25%;
+  font-size: 0.6rem;
+  opacity: 0.6;
   visibility: hidden;
+}
+
+.facebook {
+  border-width: 1px;
+  padding: 0.4rem 0.65rem;
+}
+
+.twitter,
+.instagram {
+  border-width: 1px;
+  padding: 0.4rem 0.5rem;
 }
 
 /* 
@@ -800,12 +784,25 @@ Footer
   color: hsl(228, 45%, 44%);
 }
 
-.placeholder\:pl-5::-moz-placeholder {
-  padding-left: 1.25rem;
+@media (min-width: 768px) {
+  .error-text {
+    left: 0;
+    transform: translate(5%, 255%);
+  }
+
+  .facebook,
+  .twitter,
+  .instagram {
+    font-size: 0.8rem;
+  }
 }
 
-.placeholder\:pl-5::placeholder {
-  padding-left: 1.25rem;
+.placeholder\:pl-8::-moz-placeholder {
+  padding-left: 2rem;
+}
+
+.placeholder\:pl-8::placeholder {
+  padding-left: 2rem;
 }
 
 .placeholder\:text-sm::-moz-placeholder {
@@ -836,17 +833,64 @@ Footer
   opacity: 0.75;
 }
 
+.hover\:bg-blue-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-cl_primary_blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(223 87% 63% / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.focus\:outline-cl_primary_blue:focus {
+  outline-color: hsl(223, 87%, 63%);
+}
+
 @media (min-width: 768px) {
+  .md\:m-0 {
+    margin: 0px;
+  }
+
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .md\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .md\:h-5 {
+    height: 1.25rem;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
   .md\:max-w-lg {
     max-width: 32rem;
-  }
-
-  .md\:max-w-md {
-    max-width: 28rem;
-  }
-
-  .md\:flex-1 {
-    flex: 1 1 0%;
   }
 
   .md\:flex-row {
@@ -857,6 +901,18 @@ Footer
     align-items: center;
   }
 
+  .md\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -865,5 +921,10 @@ Footer
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }

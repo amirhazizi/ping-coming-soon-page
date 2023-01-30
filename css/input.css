@@ -1,21 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+a,
+button {
+  cursor: pointer;
+  transition: all 250ms linear;
+}
 input {
   border-width: 1px;
 }
 .submit-btn {
   margin-top: 0.5rem;
   margin-bottom: 4rem;
+  box-shadow: 0px 10px 25px hsla(223, 87%, 63%, 0.324);
 }
 .error-text {
   position: absolute;
-  transform: translate(0, 300%);
+  transform: translate(0, 350%);
   font-weight: 600;
-  left: 20%;
-  font-size: 0.7rem;
+  left: 25%;
+  font-size: 0.6rem;
+  opacity: 0.6;
   visibility: hidden;
+}
+.facebook {
+  border-width: 1px;
+  padding: 0.4rem 0.65rem;
+}
+.twitter,
+.instagram {
+  border-width: 1px;
+  padding: 0.4rem 0.5rem;
 }
 /* 
 error submit
@@ -36,4 +51,16 @@ Footer
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .error-text {
+    left: 0;
+    transform: translate(5%, 255%);
+  }
+  .facebook,
+  .twitter,
+  .instagram {
+    font-size: 0.8rem;
+  }
 }
