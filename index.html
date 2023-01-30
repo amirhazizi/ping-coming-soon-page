@@ -18,12 +18,15 @@
     <link rel="stylesheet" href="./css/fonts.css" />
   </head>
   <body class="min-h-screen grid items-center">
+    <!-- container -->
     <main class="container mx-auto text-center py-20 md:py-0">
+      <!-- logo -->
       <img
         class="mx-auto h-4 mb-10 md:mb-8 md:h-5"
         src="./images/logo.svg"
         alt=""
       />
+      <!-- header -->
       <div class="space-y-3 mb-8">
         <h1 class="font-bold text-2xl md:text-4xl">
           <span class="font-light text-cl_gray">We are launching </span>soon!
@@ -32,11 +35,13 @@
           Subscribe and get notified
         </p>
       </div>
+      <!-- form -->
       <form
         class="flex flex-col px-2 max-w-xs mx-auto relative md:flex-row md:max-w-lg md:items-center md:space-x-5 md:px-0 md:mb-16"
         action=""
         id="form"
       >
+      <!-- form input -->
         <input
           class="border-cl_paleBlue rounded-full py-2 pl-8 placeholder:text-sm placeholder:b-1 placeholder:opacity-75 focus:outline-cl_primary_blue text-base placeholder:text-cl_paleBlue md:w-2/3"
           type="text"
@@ -44,9 +49,11 @@
           id="email"
           placeholder="Your email address..."
         />
+        <!-- error msg -->
         <p class="error-text italic text-cl_lightRed">
           Please provide a valid email address
         </p>
+        <!-- submit btn -->
         <button
           class="submit-btn bg-cl_primary_blue rounded-full py-3 text-white font-semibold text-sm md:m-0 md:w-1/3 hover:bg-blue-400"
           type="submit"
@@ -55,42 +62,58 @@
           Notify Me
         </button>
       </form>
+      <!-- end of form -->
+      <!-- dashboard img -->
       <img
         class="px-7 md:max-w-lg md:px-0 mx-auto mb-28 md:mb-12"
         src="./images/illustration-dashboard.png"
         alt=""
       />
+      <!-- social icons -->
       <div
         class="space-x-3 text-cl_primary_blue text-base mb-8 md:space-x-1 md:mb-4"
       >
-        <a
-          class="facebook rounded-full border-opacity-75 border-cl_paleBlue hover:text-white hover:bg-cl_primary_blue"
-          href="#"
-          ><i class="fa-brands fa-facebook-f"></i
+      <!-- social icon 1 -->
+      <a
+      class="facebook rounded-full border-opacity-75 border-cl_paleBlue hover:text-white hover:bg-cl_primary_blue"
+      href="#"
+      ><i class="fa-brands fa-facebook-f"></i
         ></a>
+        <!-- end of social icon 1 -->
+        <!-- social icon 2 -->
         <a
-          class="twitter rounded-full border-opacity-75 border-cl_paleBlue hover:text-white hover:bg-cl_primary_blue"
-          href="#"
-          ><i class="fa-brands fa-twitter"></i
-        ></a>
+        class="twitter rounded-full border-opacity-75 border-cl_paleBlue hover:text-white hover:bg-cl_primary_blue"
+        href="#"
+        ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <!-- end of social icon 2 -->
+          <!-- social icon 3 -->
         <a
-          class="instagram rounded-full border-opacity-75 border-cl_paleBlue hover:text-white hover:bg-cl_primary_blue"
-          href="#"
-          ><i class="fa-brands fa-instagram"></i
+        class="instagram rounded-full border-opacity-75 border-cl_paleBlue hover:text-white hover:bg-cl_primary_blue"
+        href="#"
+        ><i class="fa-brands fa-instagram"></i
         ></a>
+        <!-- end of social icon 3 -->
       </div>
+      <!-- copyright text -->
       <p class="text-cl_gray text-xs">
         &copy; Copyright Ping. All rights reserved.
       </p>
     </main>
-    <footer class="fixed bottom-0 bg-white">
+    <!-- footer -->
+    <footer class="fixed bg-cl_primary_blue text-white">
       <p class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="font-bold"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a  class="font-bold" href="https://github.com/amirhazizi"
+          >Amir Hossein Azizi</a
       </p>
     </footer>
+    <!-- app.js -->
     <script src="./js/app.js"></script>
   </body>
 </html>

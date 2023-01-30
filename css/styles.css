@@ -549,10 +549,6 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -628,11 +624,6 @@ video {
   background-color: hsl(223 87% 63% / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -641,6 +632,11 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-3 {
@@ -653,30 +649,8 @@ video {
   padding-right: 1.75rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .pl-8 {
   padding-left: 2rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
 }
 
 .text-center {
@@ -793,13 +767,21 @@ error submit
 Footer
 */
 
+footer {
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 0 1rem;
+  padding: 0.2rem 0.8rem;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 15px 15px 0 0;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
 
 @media (min-width: 768px) {
@@ -813,14 +795,6 @@ Footer
   .instagram {
     font-size: 0.8rem;
   }
-}
-
-.placeholder\:pl-8::-moz-placeholder {
-  padding-left: 2rem;
-}
-
-.placeholder\:pl-8::placeholder {
-  padding-left: 2rem;
 }
 
 .placeholder\:text-sm::-moz-placeholder {
@@ -889,10 +863,6 @@ Footer
 
   .md\:mb-4 {
     margin-bottom: 1rem;
-  }
-
-  .md\:mb-14 {
-    margin-bottom: 3.5rem;
   }
 
   .md\:h-5 {
