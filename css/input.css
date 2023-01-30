@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+input {
+  border-width: 1px;
+}
+.submit-btn {
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+}
+.error-text {
+  position: absolute;
+  transform: translate(0, 300%);
+  font-weight: 600;
+  left: 20%;
+  font-size: 0.7rem;
+  visibility: hidden;
+}
+/* 
+error submit
+*/
+.error-text-active {
+  visibility: visible;
+}
+.error-btn {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
 /* 
 Footer
 */
